@@ -1,13 +1,15 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import { ConfigProvider } from "antd";
+import Routers from "./router";
+import zhCN from "antd/locale/zh_CN";
+import "./App.css";
 
-
-function App() {
-  return (
-    <div className="App">
-      12233
-    </div>
-  );
-}
+const App = () => {
+    return (
+        <ConfigProvider locale={zhCN}>
+            <Routers />
+        </ConfigProvider>
+    );
+};
 
 export default App;
